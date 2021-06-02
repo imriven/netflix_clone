@@ -1,5 +1,5 @@
 import React from "react"
-import JumbotronContainer from "../src/components/jumbotron"
+import {JumbotronContainer} from "./containers/jumbotron"
 
 export default function App() {
   return <JumbotronContainer/>
