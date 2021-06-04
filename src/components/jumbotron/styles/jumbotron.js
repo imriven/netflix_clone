@@ -1,4 +1,5 @@
 import styled from "styled-components/macro"
+//macro makes the code more readable in developer tools
 
 export const Inner = styled.div`
 display: flex;
