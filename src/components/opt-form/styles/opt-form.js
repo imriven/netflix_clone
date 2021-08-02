@@ -8,6 +8,7 @@ justify-content: center;
 height: 70px;
 margin-top: 20px;
 flex-wrap: wrap;
+border: 1px solid red;
 @media (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
@@ -17,7 +18,7 @@ flex-wrap: wrap;
 export const Button = styled.button`
 display: flex;
 align-items:center;
-height: 100%;
+height: 80%;
 background: #e50914;
 color:white;
 text-transform: uppercase;
@@ -54,17 +55,17 @@ max-width: 450px;
 width: 100%;
 border: 0;
 padding: 10px;
-height: 70px;
+height: 54px;
 box-sizing: border-box;
 `;
 
 export const Text = styled.p`
-font-size: 19.2px;
+font-size: 16px;
 color: white;
 text-align: center;
 
 @media (max-width: 600px) {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
 }
 `;

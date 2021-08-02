@@ -1,11 +1,26 @@
 import styled from "styled-components/macro"
 import { Link as ReactRouterLink } from "react-router-dom"
 
-export const Background = styled.div``;
+export const Background = styled.div`
+display: flex;
+flex-direction: column;
+background: url(${({ src }) => (src ? "../images/misc/${src}.jpg" : "../images/misc/home-bg.jpg")})
+top left / cover no-repeat;
 
-export const Frame = styled.div``;
 
-export const Container = styled.div``;
+// good for static site bad for dynamic site
+`;
+
+
+
+export const Container = styled.div`
+display: flex;
+margin: 0 56px;
+height: 65px;
+padding: 18px 0;
+justify-content: space-between;
+align-items: center;
+`;
 
 export const ButtonLink = styled(ReactRouterLink)`
 display: block;
@@ -26,4 +41,13 @@ box-sizing: border-box;
 }
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+height: 32px;
+width: 108px;
+margin-right: 40px;
+
+@media (min-width: 1449px) {
+    height: 45px;
+    width: 167px;
+}
+`;
