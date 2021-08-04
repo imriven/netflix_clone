@@ -12,8 +12,7 @@ export default function Home() {
           <Feature>
             <Feature.Title>Unlimited films, TV programs, and more.</Feature.Title>
             <Feature.SubTitle>Watch anywhere. Cancel at any time.+</Feature.SubTitle>
-          </Feature>
-          <OptForm>
+            <OptForm>
             <OptForm.Input placeholder="Enter Email Address" />
             <OptForm.Button>Try it Now</OptForm.Button>
             <OptForm.Break />
@@ -22,6 +21,8 @@ export default function Home() {
               membership
             </OptForm.Text>
           </OptForm>
+          </Feature>
+          
         </HeaderContainer>
 
         <JumbotronContainer />
