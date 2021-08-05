@@ -1,9 +1,7 @@
-import Firebase from "firebase/app"
-import "firebase/firestore"
-import "firebase/auth"
-import { seedDatabase } from "../seed";
-
-// we need to somehow seed the database
+import Firebase from "firebase/app";
+import "firebase/firestore";
+import "firebase/auth";
+// import { seedDatabase } from "../seed";
 
 
 //we need a config here
@@ -18,6 +16,8 @@ const config = {
 
 const firebase = Firebase.initializeApp(config);
 
-seedDatabase(firebase);
+// seedDatabase(firebase);
+
+//Needs to be commented out once database is seeded or erased or it will reseed with duplicate data / not entirely sure how true this is because it seems kind of stupid // it is very true I have a lot of duplicate data. Not sure why it wouldn't seed only once.
 
 export { firebase };
