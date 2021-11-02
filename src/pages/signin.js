@@ -22,6 +22,7 @@ export default function Signin() {
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
       .then(() => {
+        console.log("blah")
         //push to the browse page
         history.push(ROUTES.BROWSE);
       })
